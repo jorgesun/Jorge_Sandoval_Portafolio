@@ -7,22 +7,22 @@ import { ArrowUpRight, Package, Shield, TrendingUp } from "lucide-react"
 
 const projects = [
   {
-    title: "2-Shot Mold Insourcing",
-    tags: ["Insourcing", "Savings Project"],
-    description: "Transfer of 8 two-shot injection molds to internal facility, including equipment acquisition, special interface installation, and full mold validation.",
+    title: "Resin Substitution — $1M/yr Savings",
+    tags: ["Cost Reduction", "Rain Bird 2024"],
+    description: "Replaced premium resins with cost-effective equivalents across injection molding lines, delivering $1M per year in material savings. Recognized with the 'Most Significant Cost Reduction' award (2024) and 'Largest Impact of Alternative Material' (2025).",
+    icon: TrendingUp,
+  },
+  {
+    title: "Mold Insourcing — $2.5M CAPEX Avoided",
+    tags: ["Insourcing", "CAPEX Optimization"],
+    description: "Insourced critical molds to internal facility, avoiding $2.5M in capital expenditure. Drove global advanced DOE for tooling optimization across suppliers in Asia and North America.",
     icon: Package,
   },
   {
-    title: "IATF 16949 Quality System",
-    tags: ["Quality", "Compliance"],
-    description: "Design and implementation of family-based Control Plan strategy for injection molding, aligned with IATF 16949 audit requirements across multiple plants.",
+    title: "Medical Unit Launch — $1M/month Revenue",
+    tags: ["Medical", "ISO 13485"],
+    description: "Launched a new medical injection molding unit at Formula Plastics, reaching $1M monthly revenue within 12 months. Completed ISO 13485 mold validations in 4 weeks to safeguard the launch timeline during the Covid-19 crisis.",
     icon: Shield,
-  },
-  {
-    title: "Continuous Improvement — Molding Excellence",
-    tags: ["CI", "RCA"],
-    description: "Root Cause Analysis initiative reducing scrap and improving OEE across injection molding operations. Delivered structured reports and corrective action plans.",
-    icon: TrendingUp,
   },
 ]
 

@@ -8,22 +8,22 @@ const metrics = [
   {
     value: "30+",
     label: "Years of Experience",
-    description: "Injection Molding Industry",
+    description: "Scientific Injection Molding",
   },
   {
     value: "$1M+",
-    label: "Cost Savings Delivered",
-    description: "Documented Savings",
+    label: "Annual Savings",
+    description: "Resin Substitution — Rain Bird 2024",
   },
   {
-    value: "4",
-    label: "Plants Managed",
-    description: "Tecate, El Lago, Nogales, Azusa",
+    value: "$2.5M",
+    label: "CAPEX Avoided",
+    description: "Mold Insourcing Project",
   },
   {
-    value: "IATF 16949",
-    label: "Quality System Certified",
-    description: "Automotive Standard",
+    value: "ISO 13485",
+    label: "Medical Quality Systems",
+    description: "IQ/OQ/PQ · FDA QSR · Mold Validations",
   },
 ]
 

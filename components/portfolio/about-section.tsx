@@ -58,16 +58,16 @@ export function AboutSection() {
               className="md:col-span-3"
             >
               <p className="font-sans text-lg leading-relaxed text-[#7BA3C4]">
-                <span className="text-[#E8F4FD] font-semibold">Jorge Sandoval</span> is a Principal Process Engineer and Acting Engineering Manager at{" "}
-                <span className="text-[#4A9ED6]">Rain Bird Corporation</span>, based at the Arimex facility in Tecate, B.C.
+                <span className="text-[#E8F4FD] font-semibold">Jorge Sandoval</span> is a Principal Engineer and Acting Engineering Manager at{" "}
+                <span className="text-[#4A9ED6]">Rain Bird Corporation</span>, based in Tijuana, B.C.
               </p>
               <p className="font-sans text-lg leading-relaxed text-[#7BA3C4] mt-4">
-                With over <span className="font-mono text-[#4A9ED6] font-semibold">30 years</span> of hands-on expertise in injection molding operations, he has driven over{" "}
-                <span className="font-mono text-[#4A9ED6] font-semibold">$1M+</span> in documented savings through scrap reduction, process optimization, and automation projects.
+                With over <span className="font-mono text-[#4A9ED6] font-semibold">30 years</span> of hands-on expertise in scientific injection molding for medical and high-spec products, he has driven over{" "}
+                <span className="font-mono text-[#4A9ED6] font-semibold">$1M+</span> in documented savings through scrap reduction, process optimization, and CAPEX avoidance.
               </p>
               <p className="font-sans text-lg leading-relaxed text-[#7BA3C4] mt-4">
-                His career spans manufacturing engineering, operations management, quality systems{" "}
-                <span className="font-mono text-[#4A9ED6]">(IATF 16949, APQP, PFMEA)</span>, and capital project justification across multiple facilities.
+                Expert in <span className="font-mono text-[#4A9ED6]">Lean Six Sigma, DOE, and Decoupled Molding</span>. Led cross-functional teams in Mexico and the U.S. while coordinating suppliers across Asia. Regulatory experience includes{" "}
+                <span className="font-mono text-[#4A9ED6]">ISO 13485, IQ/OQ/PQ, and FDA QSR</span>.
               </p>
             </motion.div>
           </div>

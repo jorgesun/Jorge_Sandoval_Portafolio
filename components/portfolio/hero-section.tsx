@@ -29,14 +29,14 @@ export function HeroSection() {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-mono text-sm md:text-base text-[#4A9ED6] mb-4 tracking-wider"
           >
-            PRINCIPAL PROCESS ENGINEER
+            ENGINEERING MANAGER
           </motion.p>
-          
+
           {/* Name */}
           <h1 className="font-[family-name:var(--font-syne)] font-bold text-5xl sm:text-6xl md:text-7xl lg:text-8xl text-[#E8F4FD] mb-6 tracking-tight">
             Jorge Sandoval
           </h1>
-          
+
           {/* Title */}
           <motion.p
             initial={{ opacity: 0 }}
@@ -44,9 +44,9 @@ export function HeroSection() {
             transition={{ delay: 0.4, duration: 0.6 }}
             className="font-[family-name:var(--font-syne)] text-xl md:text-2xl text-[#7BA3C4] mb-4"
           >
-            Principal Process Engineer | Engineering Manager
+            Principal Engineer | Engineering Manager (Acting)
           </motion.p>
-          
+
           {/* Location */}
           <motion.p
             initial={{ opacity: 0 }}
@@ -56,7 +56,7 @@ export function HeroSection() {
           >
             Tijuana, B.C. | Rain Bird Corporation
           </motion.p>
-          
+
           {/* Tagline */}
           <motion.p
             initial={{ opacity: 0 }}
@@ -64,7 +64,7 @@ export function HeroSection() {
             transition={{ delay: 0.6, duration: 0.6 }}
             className="font-sans text-lg md:text-xl text-[#7BA3C4] max-w-2xl mx-auto mb-12"
           >
-            30+ years driving operational excellence in injection molding manufacturing
+            30+ years in scientific injection molding for medical and high-spec products — delivering $1M+ in cost savings and double-digit scrap reductions
           </motion.p>
           
           {/* CTA Buttons */}

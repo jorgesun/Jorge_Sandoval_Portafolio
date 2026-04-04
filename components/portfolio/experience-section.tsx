@@ -3,34 +3,52 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
-import { Building2, Factory, Award } from "lucide-react"
+import { Building2, Factory, Award, Microscope, GraduationCap } from "lucide-react"
 
 const experiences = [
   {
-    period: "2022 – Present",
+    period: "Oct 2022 – Present",
     company: "Rain Bird Corporation",
-    role: "Principal Process Engineer | Acting Engineering Manager",
-    location: "Arimex, Tecate B.C. (+ El Lago, Nogales, Azusa)",
-    description: "Capital equipment justification, IATF 16949 compliance, injection molding optimization, multi-plant CI initiatives, 2-shot mold transfer insourcing project.",
+    role: "Principal Engineer / Engineering Manager (Acting)",
+    location: "Tijuana, B.C.",
+    description: "Drove $1M/yr savings by replacing premium resins with cost-effective equivalents. Insourced critical molds, avoiding $2.5M in CAPEX. Drove global advanced DOE for tooling optimization. CAPEX administrator and Continuous Improvement SME.",
     icon: Building2,
     current: true,
   },
   {
-    period: "Prior",
+    period: "Jun 2020 – Oct 2022",
     company: "Formula Plastics",
-    role: "Director de Operaciones",
+    role: "Sr. Molding Engineering Manager",
     location: "Tecate, B.C.",
-    description: "Operations leadership, efficiency improvement through automation, team building, key project execution.",
+    description: "Launched medical unit to $1M revenue per month within 12 months. Cut scrap by $200K using DOE & SPC. Completed ISO 13485 mold validations in 4 weeks, safeguarding launch timeline during Covid-19 crisis.",
     icon: Factory,
     current: false,
   },
   {
-    period: "30+ Years",
-    company: "Injection Molding Industry",
-    role: "Progressive Career Development",
-    location: "Multiple Facilities",
-    description: "Progressive roles from process technician to engineering management. Specialization in mold validation, process parameters, tooling, and quality systems.",
-    icon: Award,
+    period: "Feb 2018 – May 2020",
+    company: "Rain Bird Corporation",
+    role: "Principal Engineer",
+    location: "Tijuana, B.C.",
+    description: "Led new mold validations (DFM, FAT/SAT, DOE, Cpk analysis) with global suppliers. Achieved $250K scrap reduction through DOE & SPC (2019). Delivered $400K savings by insourcing molds from external suppliers (2019).",
+    icon: Building2,
+    current: false,
+  },
+  {
+    period: "Dec 2009 – Nov 2017",
+    company: "Nypro Healthcare",
+    role: "Molding Engineering Manager",
+    location: "Tijuana, B.C.",
+    description: "Managed $2M tooling budget, optimizing resources and transitioning legacy molding processes to cavity pressure control. Launched new extrusion line. Led project management for introduction and validation of high-impact engineering projects.",
+    icon: Microscope,
+    current: false,
+  },
+  {
+    period: "Jun 1997 – Oct 2008",
+    company: "Kodak de México / Nypro",
+    role: "Molding Process Engineer",
+    location: "Guadalajara, Jal.",
+    description: "Deployed Scientific Molding at Nypro, raising First-Pass Yield 10%. Qualified 20+ transferred molds (Asia → MX). RJG Master Molder Certified. At Kodak: saved $150K/yr via scrap reduction; pelletizing project delivered $500K/yr savings.",
+    icon: GraduationCap,
     current: false,
   },
 ]
