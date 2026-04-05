@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { useInView } from "framer-motion"
 import { useRef } from "react"
+import Image from "next/image"
 
 export function AboutSection() {
   const ref = useRef(null)
@@ -38,11 +39,16 @@ export function AboutSection() {
               className="md:col-span-2 flex justify-center"
             >
               <div className="relative">
-                {/* Monogram Avatar */}
-                <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl glass-card flex items-center justify-center metallic-glow">
-                  <span className="font-[family-name:var(--font-syne)] font-bold text-6xl md:text-7xl text-[#4A9ED6] text-glow">
-                    JS
-                  </span>
+                {/* Profile Photo */}
+                <div className="w-48 h-48 md:w-64 md:h-64 rounded-2xl overflow-hidden metallic-glow">
+                  <Image
+                    src="/jorge-sandoval.jpg"
+                    alt="Jorge Sandoval — Engineering Manager"
+                    width={256}
+                    height={256}
+                    className="w-full h-full object-cover object-center"
+                    priority
+                  />
                 </div>
                 {/* Decorative corners */}
                 <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-[#4A9ED6]" />
