@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 
-interface Theme {
+interface Theetest{
     bg: string;
     headerBg: string;
     pitchBg: string;
