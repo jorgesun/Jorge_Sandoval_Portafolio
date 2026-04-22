@@ -1,4 +1,4 @@
-"use client";
+f"use client";
 
 import { useState, useEffect } from "react";
 
@@ -155,6 +155,7 @@ export default function CVPage() {
 }, []);
 
   const handlePrint = () => {
+      if (typeof window === "undefined") return;
     const wasLight = mode === "light";
     if (!wasLight) setMode("light");
     setTimeout(() => {
