@@ -129,9 +129,9 @@ const awards = [{ name: "Most Significant Cost Reduction", org: "Rain Bird", yea
 function SectionTitle({ icon, children, theme }: { icon: string; children: React.ReactNode; theme: Theme }) {
     return (
           <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "16px", borderBottom: "2px solid " + theme.sectionBorder, paddingBottom: "8px" }}>
-                  <span style={{ fontSize: "14px", opacity: 0.6 }}>{icon}</span>span>
+                  <span style={{ fontSize: "14px", opacity: 0.6 }}>{icon}</span>
                   <h2 style={{ margin: 0, fontSize: "13px", fontWeight: "700", letterSpacing: "2.5px", textTransform: "uppercase", color: theme.sectionTitle, fontFamily: "'Playfair Display', Georgia, serif" }}>{children}</h2>h2>
-          </div>div>
+          </div>
         );
 }
 
@@ -183,7 +183,7 @@ export default function CVPage() {
                         {([{"key": "dark", "label": "Screen"}, {"key": "light", "label": "Print"}] as const).map((opt) => (
                       <button key={opt.key} onClick={() => setMode(opt.key as "dark" | "light")} style={{ ...btnBase, borderRadius: 0, background: mode === opt.key ? "#3B82A0" : "transparent", color: mode === opt.key ? "#fff" : "rgba(255,255,255,0.45)" }}>
                         {opt.label}
-                      </button>button>
+                      </butttton>ton>
                     ))}
                       </div>div>
                       <button onClick={handlePrint} style={{ ...btnBase, background: "#3B82A0", color: "#fff", display: "flex", alignItems: "center", gap: "6px" }}>
