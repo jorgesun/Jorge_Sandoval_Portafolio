@@ -17,6 +17,7 @@ import {
 } from "lucide-react"
 import Link from "next/link"
 
+
 // ─── Data ────────────────────────────────────────────────────────────────────
 
 const profile = {
@@ -184,10 +185,9 @@ const awards = [
 // ─── Component ────────────────────────────────────────────────────────────────
 
 export default function CVPage() {
-  // SSR-safe: window is only accessed inside an event handler, never during render
   const handlePrint = () => {
     if (typeof window !== "undefined") {
-      window.print()
+      window.open("/cv/print", "_blank")
     }
   }
 
