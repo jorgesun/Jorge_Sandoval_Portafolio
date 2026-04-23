@@ -1,6 +1,20 @@
 "use client"
 
-import { Building2, Factory, Microscope, GraduationCap, Mail, Phone, MapPin, ExternalLink, Award, Printer } from "lucide-react"
+import {
+  Building2,
+  Factory,
+  Microscope,
+  GraduationCap,
+  Wrench,
+  FlaskConical,
+  Camera,
+  Mail,
+  Phone,
+  MapPin,
+  ExternalLink,
+  Award,
+  Printer,
+} from "lucide-react"
 import Link from "next/link"
 
 // ─── Data ────────────────────────────────────────────────────────────────────
@@ -9,25 +23,25 @@ const profile = {
   name: "Jorge Sandoval",
   title: "Principal Process Engineer | Engineering Manager (Acting)",
   location: "Tijuana, B.C., México",
-  email: "jorge.sandoval@example.com",
-  phone: "+52 664 000 0000",
+  email: "jorgesun@gmail.com",
+  phone: "664-520-4587",
   linkedin: "linkedin.com/in/jorgesandoval",
   summary:
-    "30+ years driving operational excellence in scientific injection molding for medical, agricultural, and high-spec manufacturing. Proven record of $1M+ annual cost savings, double-digit scrap reductions, and cross-functional team leadership. IATF 16949 and ISO 13485 expert. RJG Master Molder certified.",
+    "Operations & Engineering leader with 30+ years in scientific injection molding for medical and high-spec products. Expert in Lean Six Sigma, DOE and Decoupled Molding, delivering over $1 million in cost savings and double-digit scrap reductions. Led cross-functional teams in Mexico and the U.S. while coordinating suppliers across Asia.",
 }
 
 const experiences = [
   {
     period: "Oct 2022 – Present",
-    company: "Rain Bird Corporation",
+    company: "Rain Bird",
     role: "Principal Engineer / Engineering Manager (Acting)",
-    location: "Tijuana, B.C.",
+    location: "Tijuana",
     icon: Building2,
     achievements: [
-      "Drove $1M/yr savings by replacing premium resins with cost-effective equivalents",
-      "Insourced critical molds, avoiding $2.5M in CAPEX",
-      "Led global advanced DOE for tooling optimization",
-      "CAPEX administrator and Continuous Improvement SME",
+      "Drove US $1M/yr savings by replacing premium resins with cost-effective equivalents.",
+      "Insourced critical molds, avoiding US $2.5M in CAPEX.",
+      "Drove global advanced DOE for tooling optimization.",
+      "CAPEX administrator and Continuous Improvement SME.",
     ],
     current: true,
   },
@@ -35,25 +49,25 @@ const experiences = [
     period: "Jun 2020 – Oct 2022",
     company: "Formula Plastics",
     role: "Sr. Molding Engineering Manager",
-    location: "Tecate, B.C.",
+    location: "Tecate",
     icon: Factory,
     achievements: [
-      "Launched medical unit to $1M revenue/month within 12 months",
-      "Cut scrap by $200K using DOE & SPC",
-      "Completed ISO 13485 mold validations in 4 weeks during Covid-19",
+      "Launched medical unit to US $1M revenue per month within 12 months.",
+      "Cut scrap by US $200K using DOE & SPC.",
+      "Completed ISO 13485 mold validations in 4 weeks, safeguarding launch timeline supporting Covid-19 crisis.",
     ],
     current: false,
   },
   {
     period: "Feb 2018 – May 2020",
-    company: "Rain Bird Corporation",
+    company: "Rain Bird",
     role: "Principal Engineer",
-    location: "Tijuana, B.C.",
+    location: "Tijuana",
     icon: Building2,
     achievements: [
-      "Led new mold validations (DFM, FAT/SAT, DOE, Cpk) with global suppliers",
-      "$250K scrap reduction through DOE & SPC (2019)",
-      "$400K savings by insourcing molds from external suppliers (2019)",
+      "Led new mold validations (DFM, FAT/SAT, DOE, Cpk analysis) with global suppliers.",
+      "Achieved US $250K scrap reduction through DOE & SPC initiatives.",
+      "Delivered US $400K savings by insourcing molds from external suppliers.",
     ],
     current: false,
   },
@@ -61,79 +75,110 @@ const experiences = [
     period: "Dec 2009 – Nov 2017",
     company: "Nypro Healthcare",
     role: "Molding Engineering Manager",
-    location: "Tijuana, B.C.",
+    location: "Tijuana",
     icon: Microscope,
     achievements: [
-      "Managed $2M tooling budget optimizing resources",
-      "Transitioned legacy molding to cavity pressure control",
-      "Launched new extrusion line and led high-impact engineering project validations",
+      "Managed a US $2M tooling budget, optimizing resources and transitioning legacy processes to cavity pressure control.",
+      "Launched a new extrusion line, overseeing equipment installation and production ramp up.",
+      "Led project management activities for high impact engineering projects.",
     ],
     current: false,
   },
   {
-    period: "Jun 1997 – Oct 2008",
-    company: "Kodak de México / Nypro",
-    role: "Molding Process Engineer",
-    location: "Guadalajara, Jal.",
-    icon: GraduationCap,
+    period: "Oct 2008 – Jun 2009",
+    company: "The Graduate Technology Group",
+    role: "Engineering Manager",
+    location: "Guadalajara",
+    icon: Wrench,
     achievements: [
-      "Deployed Scientific Molding at Nypro, raising First-Pass Yield 10%",
-      "Qualified 20+ transferred molds (Asia → MX)",
-      "Kodak: $150K/yr scrap reduction; pelletizing project $500K/yr savings",
+      "Relocated US-MX plant with zero customer disruption, avoiding US $600K.",
+      "Managed tool room, maintenance, and molding processes ensuring equipment reliability.",
+    ],
+    current: false,
+  },
+  {
+    period: "Jun 2006 – Oct 2008",
+    company: "Nypro",
+    role: "Molding Process Engineer",
+    location: "Guadalajara",
+    icon: FlaskConical,
+    achievements: [
+      "Deployed Scientific Molding, raising First-Pass Yield 10%.",
+      "Qualified 20+ transferred molds (Asia → MX).",
+      "RJG Master Molder Certified: led comprehensive internal training.",
+    ],
+    current: false,
+  },
+  {
+    period: "Jun 1997 – Jun 2006",
+    company: "Kodak de México",
+    role: "Molding Process Engineer",
+    location: "Guadalajara",
+    icon: Camera,
+    achievements: [
+      "Saved US $150K/yr via scrap reduction.",
+      "Pelletizing project delivered US $500K/yr savings.",
+      "Two-shot molding transfer US → MX.",
     ],
     current: false,
   },
 ]
 
-const skills = {
-  "Core Expertise": [
-    "Scientific Injection Molding",
-    "DOE / SPC",
-    "Mold Validation (FAT/SAT)",
-    "Cavity Pressure Control",
-    "DFM Analysis",
-    "Cpk / Process Capability",
-  ],
-  "Quality Systems": [
-    "IATF 16949",
-    "ISO 13485",
-    "ISO 9001",
-    "PPAP / APQP",
-    "FMEA",
-    "MSA",
-  ],
-  "Leadership": [
-    "Engineering Management",
-    "Cross-functional Team Leadership",
-    "CAPEX Administration",
-    "Supplier Development",
-    "Continuous Improvement",
-    "Change Management",
-  ],
-  "Tools & Methods": [
-    "RJG Master Molder (Certified)",
-    "Minitab / Statistical Software",
-    "CAD Review",
-    "Cost-Down Engineering",
-    "Lean Manufacturing",
-    "Project Management",
-  ],
-}
+const skills = [
+  "Engineering Project Management",
+  "Tool Room and Mold Maintenance",
+  "Strategic Decision Making",
+  "Statistical Analysis",
+  "Scientific Injection Molding",
+  "Regulatory & Medical Compliance",
+  "Technical Communication",
+  "Automation & Validation Leadership",
+  "Cross-Functional Team Leadership",
+  "Cost Reduction & CAPEX Optimization",
+]
+
+const techStack = [
+  {
+    category: "Process Optimization",
+    tools: ["DOE", "SPC", "Minitab", "Cpk/Ppk", "ANOVA", "Root Cause Analysis"],
+  },
+  {
+    category: "Regulatory Compliance",
+    tools: ["ISO 13485", "IQ/OQ/PQ", "FDA QSR", "IATF 16949"],
+  },
+  {
+    category: "Scientific Molding",
+    tools: ["RJG", "Cavity Pressure", "Transfer Mold Validations", "Two-Shot", "Extrusion"],
+  },
+  {
+    category: "Data & Reporting",
+    tools: ["Excel VBA", "Power BI", "Python"],
+  },
+]
 
 const education = [
   {
-    degree: "B.S. in Mechatronics Engineering",
-    school: "CETYS Universidad",
-    location: "Tijuana, B.C.",
-    year: "2002",
+    school: "Universidad de Guadalajara",
+    degree: "B.S. Mechanical and Electrical Engineering",
+    year: "2003",
+  },
+  {
+    school: "CETYS University",
+    degree: "MBA",
+    year: "2019",
   },
 ]
 
 const certifications = [
-  "RJG Master Molder Certified",
-  "IATF 16949 Internal Auditor",
-  "ISO 13485 Process Validation",
-  "Scientific Molding Practitioner",
+  "Master Molder I",
+  "Master Molder II",
+  "RJG Train the Trainer – 2006 (Recert. 2012/2015/2019)",
+  "Black Belt",
+]
+
+const awards = [
+  { name: "Most Significant Cost Reduction", org: "Rain Bird", year: "2024" },
+  { name: "Largest Impact of Alternative Material", org: "Rain Bird", year: "2025" },
 ]
 
 // ─── Component ────────────────────────────────────────────────────────────────
@@ -197,45 +242,79 @@ export default function CVPage() {
           </div>
         </header>
 
+        {/* ── Summary ── */}
+        <section className="mb-10 p-5 rounded-xl bg-[rgba(74,158,214,0.05)] border border-[rgba(74,158,214,0.12)]">
+          <p className="text-sm leading-relaxed text-[#7BA3C4]">{profile.summary}</p>
+        </section>
+
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
 
-          {/* ── Left column ── */}
-          <aside className="lg:col-span-1 space-y-8">
-
-            {/* Summary */}
-            <section>
-              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono">
-                Professional Summary
-              </h2>
-              <p className="text-sm leading-relaxed text-[#7BA3C4]">
-                {profile.summary}
-              </p>
-            </section>
+          {/* ── Right sidebar ── */}
+          <aside className="lg:col-span-1 space-y-8 lg:order-2">
 
             {/* Skills */}
-            {Object.entries(skills).map(([category, items]) => (
-              <section key={category}>
-                <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono">
-                  {category}
-                </h2>
-                <ul className="space-y-1">
-                  {items.map((skill) => (
-                    <li
-                      key={skill}
-                      className="flex items-start gap-2 text-sm text-[#7BA3C4]"
-                    >
-                      <span className="text-[#4A9ED6] mt-1 leading-none select-none">▸</span>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </section>
-            ))}
+            <section>
+              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2">
+                Skills
+              </h2>
+              <div className="flex flex-wrap gap-1.5">
+                {skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="inline-block px-2 py-1 rounded text-[10px] font-semibold tracking-wide bg-[rgba(74,158,214,0.1)] text-[#7BA3C4] border border-[rgba(74,158,214,0.2)]"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </section>
+
+            {/* Tech Stack */}
+            <section>
+              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2">
+                Tech Stack
+              </h2>
+              <div className="space-y-4">
+                {techStack.map((cat) => (
+                  <div key={cat.category}>
+                    <p className="text-[10px] font-bold uppercase tracking-widest text-[#4A9ED6] mb-2">
+                      {cat.category}
+                    </p>
+                    <div className="flex flex-wrap gap-1.5">
+                      {cat.tools.map((tool) => (
+                        <span
+                          key={tool}
+                          className="inline-block px-2 py-0.5 rounded text-[10px] font-semibold bg-[rgba(74,158,214,0.08)] text-[#6AB4E2] border border-[rgba(74,158,214,0.18)]"
+                        >
+                          {tool}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+
+            {/* Education */}
+            <section>
+              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2">
+                Education
+              </h2>
+              <div className="space-y-4">
+                {education.map((edu) => (
+                  <div key={edu.degree}>
+                    <p className="text-sm font-semibold text-[#E8F4FD]">{edu.school}</p>
+                    <p className="text-sm text-[#7BA3C4]">{edu.degree}</p>
+                    <p className="font-mono text-xs text-[#4A9ED6]">{edu.year}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
 
             {/* Certifications */}
             <section>
-              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono flex items-center gap-2">
-                <Award size={14} />
+              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2 flex items-center gap-2">
+                <Award size={12} />
                 Certifications
               </h2>
               <ul className="space-y-2">
@@ -250,30 +329,34 @@ export default function CVPage() {
               </ul>
             </section>
 
-            {/* Education */}
+            {/* Awards */}
             <section>
-              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono">
-                Education
+              <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-3 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2">
+                Awards
               </h2>
-              {education.map((edu) => (
-                <div key={edu.degree}>
-                  <p className="text-sm font-semibold text-[#E8F4FD]">{edu.degree}</p>
-                  <p className="text-sm text-[#7BA3C4]">{edu.school}</p>
-                  <p className="font-mono text-xs text-[#4A9ED6]">
-                    {edu.location} · {edu.year}
-                  </p>
-                </div>
-              ))}
+              <div className="space-y-2">
+                {awards.map((a) => (
+                  <div
+                    key={a.name}
+                    className="p-3 rounded-lg bg-[rgba(74,158,214,0.07)] border border-[rgba(74,158,214,0.15)]"
+                  >
+                    <p className="text-sm font-semibold text-[#E8F4FD]">{a.name}</p>
+                    <p className="font-mono text-xs text-[#4A9ED6]">
+                      {a.org} · {a.year}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </section>
           </aside>
 
-          {/* ── Right column – Experience ── */}
-          <section className="lg:col-span-2">
-            <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-6 font-mono">
+          {/* ── Left column – Experience ── */}
+          <section className="lg:col-span-2 lg:order-1">
+            <h2 className="font-bold text-xs uppercase tracking-widest text-[#4A9ED6] mb-6 font-mono border-b border-[rgba(74,158,214,0.2)] pb-2">
               Professional Experience
             </h2>
 
-            <div className="relative space-y-8">
+            <div className="relative space-y-6">
               {/* Timeline line */}
               <div className="absolute left-3 top-0 bottom-0 w-px bg-gradient-to-b from-[#4A9ED6] via-[#2D6BA0] to-transparent" />
 
@@ -299,7 +382,7 @@ export default function CVPage() {
                       {exp.period}
                     </span>
 
-                    <h3 className="font-bold text-lg text-[#E8F4FD] mb-0.5">{exp.company}</h3>
+                    <h3 className="font-bold text-base text-[#E8F4FD] mb-0.5">{exp.company}</h3>
                     <p className="text-sm text-[#4A9ED6] mb-0.5">{exp.role}</p>
                     <p className="font-mono text-xs text-[#7BA3C4] mb-3">{exp.location}</p>
 
