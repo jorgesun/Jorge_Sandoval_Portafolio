@@ -57,6 +57,13 @@ export function Navbar() {
                 <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#4A9ED6] transition-all duration-300 group-hover:w-full" />
               </a>
             ))}
+            {/* CV link — highlighted */}
+            <a
+              href="/cv"
+              className="font-mono text-sm font-semibold px-4 py-1.5 rounded-lg border border-[rgba(74,158,214,0.5)] text-[#4A9ED6] hover:bg-[rgba(74,158,214,0.12)] hover:border-[#4A9ED6] transition-all duration-300"
+            >
+              CV
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -94,6 +101,17 @@ export function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
+              {/* CV link in mobile menu */}
+              <motion.a
+                href="/cv"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: navLinks.length * 0.1 }}
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="block font-mono text-sm font-semibold text-[#4A9ED6] border border-[rgba(74,158,214,0.4)] rounded-lg px-3 py-2 hover:bg-[rgba(74,158,214,0.1)] transition-colors"
+              >
+                View CV
+              </motion.a>
             </div>
           </motion.div>
         )}

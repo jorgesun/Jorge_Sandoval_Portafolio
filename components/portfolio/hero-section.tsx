@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowDown, Briefcase, Mail } from "lucide-react"
+import { ArrowDown, Briefcase, Mail, FileText } from "lucide-react"
 
 export function HeroSection() {
   return (
@@ -80,6 +80,13 @@ export function HeroSection() {
             >
               <Briefcase size={20} />
               View Projects
+            </a>
+            <a
+              href="/cv"
+              className="group flex items-center gap-2 px-8 py-4 bg-[rgba(74,158,214,0.15)] border border-[#4A9ED6] text-[#4A9ED6] font-[family-name:var(--font-syne)] font-semibold rounded-lg hover:bg-[rgba(74,158,214,0.25)] transition-all duration-300"
+            >
+              <FileText size={20} />
+              View CV
             </a>
             <a
               href="#contact"
