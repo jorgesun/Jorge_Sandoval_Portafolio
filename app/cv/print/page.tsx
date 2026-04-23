@@ -181,7 +181,7 @@ export default function CVPrintPage() {
 
       {/* ── A4 Page ── */}
       <div style={{ background: "#e8ecef", padding: "30px 20px", minHeight: "calc(100vh - 60px)" }}>
-        <div id="cv-page" style={{ width: "210mm", margin: "0 auto", background: "white", boxShadow: "0 8px 40px rgba(0,0,0,0.25)", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", color: "#1E293B", fontSize: "10.5px", lineHeight: 1.45 }}>
+        <div id="cv-page" style={{ width: "216mm", margin: "0 auto", background: "white", boxShadow: "0 8px 40px rgba(0,0,0,0.25)", fontFamily: "'Source Sans 3', 'Helvetica Neue', Arial, sans-serif", color: "#1E293B", fontSize: "10.5px", lineHeight: 1.45 }}>
 
           {/* ── Header ── */}
           <div style={{ background: "linear-gradient(135deg, #0D1F2D 0%, #1A3A50 50%, #0D1F2D 100%)", padding: "22px 26px 18px", position: "relative", overflow: "hidden", borderBottom: `3px solid ${ACCENT_LIGHT}` }}>
@@ -323,7 +323,7 @@ export default function CVPrintPage() {
 
         @media print {
           @page {
-            size: A4;
+            size: letter;
             margin: 0;
           }
           html, body {
@@ -335,8 +335,8 @@ export default function CVPrintPage() {
             display: none !important;
           }
           #cv-page {
-            width: 210mm !important;
-            min-height: 297mm !important;
+            width: 216mm !important;
+            min-height: 279mm !important;
             margin: 0 !important;
             box-shadow: none !important;
           }
