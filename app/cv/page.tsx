@@ -9,7 +9,6 @@ import {
   FlaskConical,
   Camera,
   Mail,
-  Phone,
   MapPin,
   ExternalLink,
   Award,
@@ -25,7 +24,6 @@ const profile = {
   title: "Principal Process Engineer | Engineering Manager (Acting)",
   location: "Tijuana, B.C., México",
   email: "jorgesun@gmail.com",
-  phone: "664-520-4587",
   linkedin: "linkedin.com/in/jorgesandoval",
   summary:
     "Operations & Engineering leader with 30+ years in scientific injection molding for medical and high-spec products. Expert in Lean Six Sigma, DOE and Decoupled Molding, delivering over $1 million in cost savings and double-digit scrap reductions. Led cross-functional teams in Mexico and the U.S. while coordinating suppliers across Asia.",
@@ -230,10 +228,6 @@ export default function CVPage() {
             <span className="flex items-center gap-1">
               <Mail size={14} className="text-[#4A9ED6]" />
               {profile.email}
-            </span>
-            <span className="flex items-center gap-1">
-              <Phone size={14} className="text-[#4A9ED6]" />
-              {profile.phone}
             </span>
             <span className="flex items-center gap-1">
               <ExternalLink size={14} className="text-[#4A9ED6]" />

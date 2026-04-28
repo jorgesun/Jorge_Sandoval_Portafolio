@@ -10,7 +10,6 @@ const profile = {
   title: "Principal Process Engineer | Engineering Manager (Acting)",
   location: "Tijuana, B.C., México",
   email: "jorgesun@gmail.com",
-  phone: "664-520-4587",
   linkedin: "linkedin.com/in/jorgesandoval",
   summary:
     "Operations & Engineering leader with 30+ years in scientific injection molding for medical and high-spec products. Expert in Lean Six Sigma, DOE and Decoupled Molding, delivering over $1 million in cost savings and double-digit scrap reductions. Led cross-functional teams in Mexico and the U.S. while coordinating suppliers across Asia.",
@@ -197,7 +196,6 @@ export default function CVPrintPage() {
               </div>
               <div style={{ display: "flex", flexDirection: "column", gap: "4px", fontSize: "10px", color: "#B0C8D8", textAlign: "right" }}>
                 <span>📍 {profile.location}</span>
-                <span>📞 {profile.phone}</span>
                 <span>✉ {profile.email}</span>
                 <span>🔗 {profile.linkedin}</span>
               </div>
